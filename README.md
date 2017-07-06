@@ -1,13 +1,11 @@
-__Assume-se para este tutorial que o computador configurado possui ambiente Linux e GCC instalado.__
+
 
 Codec (Na visão de usuário):
 ========
 
 ```
-1. Codificação de arquivos   (chave ASCII numérica).
-2. Decodificação de arquivos (chave ASCII numérica).
-3. Compressão de arquivo     (Com base na redundância e similariadde)
-4. Descompressão de arquivo  (Com base na redundância e similariadde)
+ 1. O que é (objetivo) e como funciona o mecanismo de cifragem/decifragem de César?
+     O objetivo é tanto codificar uma mensagem especifica quanto descodificar a mesma, usandos um mecanismo de chave no qual soma 
 ```
 
 Compilando o código fonte da do Codec (Utilizando GNU GCC):
