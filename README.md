@@ -3,13 +3,13 @@
 Codec (Na visão de usuário):
 ========
 
-```
  1. O que é (objetivo) e como funciona o mecanismo de cifragem/decifragem de César?
-     O objetivo é tanto codificar uma mensagem especifica quanto descodificar a mesma, usandos um mecanismo de chave no qual soma 
+-----------
+```
+   O objetivo é tanto codificar uma mensagem especifica quanto descodificar a mesma, usandos um mecanismo de chave no qual soma 
 ```
 
-Compilando o código fonte da do Codec (Utilizando GNU GCC):
------------
+
 ```
 gcc codec.c codec.h interface.c -o codec
 ```
