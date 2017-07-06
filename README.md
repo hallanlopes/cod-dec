@@ -1,35 +1,18 @@
 
 
-Codec (Na visão de usuário):
+Codec:
 ========
 
  1. O que é (objetivo) e como funciona o mecanismo de cifragem/decifragem de César?
 -----------
 ```
-   O objetivo é tanto codificar uma mensagem especifica quanto descodificar a mesma, usandos um mecanismo de chave no qual soma 
+   O objetivo é tanto codificar uma mensagem especifica quanto descodificar a mesma, usandos um mecanismo de chave no qual soma. O mecanismo de César, é um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante. 
 ```
 
-
-```
-gcc codec.c codec.h interface.c -o codec
-```
-
-Executando a aplicação
+2. Funcionamento do mecanismo de cifragem (Entrada (exceções), funcionamento e saída):
+2.1 Funcionamento do mecanismo de decifragem (Entrada (exceções), funcionamento e saída)
 -----------
 ```
-- ./codec
+   No sistema não a nenhuma restrição para mensagem, pois dentro do seu funcionamento de codificar ele somente desloca o quanto de caracteres o usuario desejar quando escolhe a chave e no decoficar faz o processo inverso(diminuindo ou subtraindo ao inves de somar).
 ```
 
-Codec (Na visão do desenvolvedor):
-========
-
-Visão geral do repositório:
------------
-1. interface.c: Funções responsáveis pela leitura (scanf) e escrita (printf) de informações ao usuário da aplicação.
-2. codec.h: Definições (protótipo) das funções do arquivo (Codec.c).
-3. codec.c: Funções principais responsáveis pela compressão/descompressão e compactação/descompactação.
-
-Novas funcionalidades (Futuro):
------------
-- Remover a limitação de 30 chars para o nome do arquivo.
-- Criar novas funções para compressão (Algorítimo Burrows–Wheeler).
