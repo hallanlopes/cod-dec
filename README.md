@@ -1,6 +1,6 @@
 
 
-Codec:
+Projetos para codificar e descodifar palavras pelo mecanismo de César:
 ========
 
  1. O que é (objetivo) e como funciona o mecanismo de cifragem/decifragem de César?
@@ -15,4 +15,10 @@ Codec:
 ```
    No sistema não a nenhuma restrição para mensagem, pois dentro do seu funcionamento de codificar ele somente desloca o quanto de caracteres o usuario desejar quando escolhe a chave e no decoficar faz o processo inverso(diminuindo ou subtraindo ao inves de somar).
 ```
-
+Requisitos para rodar o programa:
+========
+```
+* Navegador Web (Exemplo: Google Chrome, Firefox, etc)
+* Servidor que rode php (Exemplo: Xampp, Wamp, etc)
+* Editor de codigos "se quiser modificar" (Exemplo: Gedit, Notpad++, etc)
+```
