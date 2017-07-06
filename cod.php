@@ -1,20 +1,20 @@
 <?php
 
-$string=$_GET['msg'];
-$newstring= " ";
-$chave=$_GET['sp'];
+$string=$_GET['msg']; // Variavel da mensagem que será criptografada
+$newstring= " "; // Variavel que recebe o resultado da codificação
+$chave=$_GET['sp']; // Variavel que recebe o numero de casas que ira se deslocar 
 
-for($i=0;$i<strlen($string);$i++){
-	$ascii=ord($string[$i]);
-	$ascii=$ascii + $chave;
-	$newstring[$i]=chr($ascii);
+for($i=0;$i<strlen($string);$i++){ //Faz o teste da codificação
+	$ascii=ord($string[$i]); //Retorna o valor ASCII do caractere
+	$ascii=$ascii + $chave; //Soma o valor ASCII com a chave
+	$newstring[$i]=chr($ascii); //Torna o caractere da variavel ASCCI em um valor especifico 
 	
-	echo "<p>" . $ascii . "</p>";
-    echo "<p>" . $string[$i] . "</p>"; 
+	echo "<p>" . $ascii . "</p>"; //Imprime o valor da variavel, com intuito de achar erros
+    echo "<p>" . $string[$i] . "</p>"; //Imprime o valor da variavel, com intuito de achar erros
 
 
 }
-       echo "<p>" . $newstring . "</p>";
+       echo "<p>" . $newstring . "</p>";//Imprime o valor da variavel codificada
 ?>
 
 <html>
